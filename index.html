@@ -10,92 +10,95 @@
     />
     <title>Coffee Masters</title>
   </head>
+
   <body>
-    <section class="header">
+    <header class="header">
       <img
-        class="brand-logo"
+        class="brand-image"
         src="https://btholt.github.io/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png"
         alt="coffee masters logo"
       />
       <h1 class="brand-name">Coffee Masters</h1>
-    </section>
+    </header>
 
     <section class="main">
-      <section class="items">
-        <h2 class="section-title">Items</h2>
+      <section class="items container">
+        <h2 class="container-title">Items</h2>
 
-        <div class="item">
-          <div class="amount-name">
+        <section class="item">
+          <div class="item-amount-and-name">
             <div class="item-amount">1x</div>
             <div class="item-name">Cappuccino</div>
           </div>
           <div class="item-price">$3.35</div>
-          <div class="extras">
-            <div class="item-extras">Lite foam</div>
-          </div>
-        </div>
+          <ul class="item-extras">
+            <li class="item-extra">Lite Foam</li>
+          </ul>
+        </section>
 
-        <div class="item">
-          <div class="amount-name">
+        <section class="item">
+          <div class="item-amount-and-name">
             <div class="item-amount">1x</div>
             <div class="item-name">Cappuccino</div>
           </div>
           <div class="item-price">$3.85</div>
-          <div class="extras">
-            <div class="item-extras">Lite foam</div>
-            <div class="item-extras">Double espresso</div>
-          </div>
-        </div>
+          <ul class="item-extras">
+            <li class="item-extra">Lite Milk</li>
+            <li class="item-extra">Double Espresso</li>
+          </ul>
+        </section>
 
-        <div class="item">
-          <div class="amount-name">
+        <section class="item">
+          <div class="item-amount-and-name">
             <div class="item-amount">1x</div>
             <div class="item-name">Croissant</div>
           </div>
           <div class="item-price">$2.45</div>
-          <div class="extras">
-            <div class="item-extras">Butter</div>
-          </div>
+          <ul class="item-extras">
+            <li class="item-extra">Butter</li>
+          </ul>
+        </section>
+      </section>
+
+      <section class="name container">
+        <h2 class="container-title">Name</h2>
+
+        <div class="input-container">
+          <label class="input-label" for="name">Name for Order</label>
+          <input type="text" class="input" id="name" />
         </div>
       </section>
 
-      <section class="name">
-        <h2 class="section-title">Name</h2>
-        <div class="input-and-label">
-          <label class="input-label" for="name">Name for order</label>
-          <input class="checkout-input" id="name" type="text" />
-        </div>
-      </section>
+      <section class="payment container">
+        <h2 class="container-title">Payment</h2>
 
-      <section class="payment">
-        <h2 class="section-title">Payment</h2>
-        <div class="input-and-label">
+        <div class="input-container">
           <label class="input-label" for="card-number">Card Number</label>
-          <input class="checkout-input" id="card-number" type="number" />
+          <input type="number" class="input" id="card-number" />
         </div>
-        <div class="input-and-label">
+
+        <div class="input-container">
           <label class="input-label" for="ccv">CCV Number</label>
-          <input class="checkout-input ccv-input" id="ccv" type="number" />
-        </div>
-      </section>
-    </section>
-
-    <section class="total">
-      <section class="total-amount">
-        <div class="text">
-          <div class="total-text">Subtotal:</div>
-          <div class="total-text">Tax:</div>
-          <div class="total-text bolded">Total:</div>
-        </div>
-
-        <div class="price">
-          <div class="total-price">$9.65</div>
-          <div class="total-price">$0.82</div>
-          <div class="total-price bolded">$10.47</div>
+          <input type="number" class="input ccv" id="ccv" />
         </div>
       </section>
 
-      <section class="place-order">
+      <section class="total">
+        <table class="total-table">
+          <tr class="table-row">
+            <td class="table-cell">Subtotal:</td>
+            <td class="table-cell">$9.65</td>
+          </tr>
+          <tr class="table-row">
+            <td class="table-cell">Tax:</td>
+            <td class="table-cell">$9.82</td>
+          </tr>
+          <tr class="table-row">
+            <td class="table-cell">Total:</td>
+            <td class="table-cell">$10.47</td>
+          </tr>
+        </table>
+
         <button class="order-button">Place Order</button>
       </section>
     </section>
