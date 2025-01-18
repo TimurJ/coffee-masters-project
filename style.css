@@ -7,61 +7,179 @@ body {
   margin: 0px;
   font-family: "Open Sans", sans-serif;
 }
+
 .header {
   display: flex;
-  justify-content: center;
   align-items: center;
-  color: rgb(233, 225, 178);
+  justify-content: center;
+  background-color: #43281d;
   height: 100px;
-  background-color: rgb(67 40 29);
+}
+
+.brand-image {
+  width: 50px;
+  height: 50px;
 }
 
 .brand-name {
+  color: #fbf2c0;
   font-size: 20px;
-}
-
-.brand-logo {
-  height: 50px;
-  width: 50px;
 }
 
 .main {
   display: grid;
+<<<<<<< Updated upstream
   grid-template-areas: "items name" "items payment";
   margin: 50px 30px 50px 30px;
   column-gap: 50px;
   row-gap: 25px;
+=======
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "items name" "items payment" "total total";
+  row-gap: 30px;
+  column-gap: 60px;
+  margin: 80px 40px 0px 40px;
+>>>>>>> Stashed changes
 }
 
 .items {
   grid-area: items;
-  background-color: rgb(238 225 214);
-  border-radius: 5px;
-  filter: drop-shadow(5px 5px 5px #c4c4c4);
 }
 
 .name {
   grid-area: name;
-  background-color: rgb(238 225 214);
-  border-radius: 5px;
-  filter: drop-shadow(5px 5px 5px #c4c4c4);
 }
 
 .payment {
   grid-area: payment;
-  background-color: rgb(238 225 214);
-  border-radius: 5px;
-  filter: drop-shadow(5px 5px 5px #c4c4c4);
 }
 
+<<<<<<< Updated upstream
 .section-title {
   text-transform: uppercase;
   color: rgb(128 78 31);
   font-weight: 200;
   margin: 10px 0px 10px 10px;
+=======
+.total {
+  grid-area: total;
+}
+
+.container {
+  background-color: #ede1d5;
+  border-radius: 8px;
+  filter: drop-shadow(5px 5px 5px #d7d7d7);
+}
+
+.container-title {
+  color: #804e1f;
+  font-weight: 200;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 10px 0px 40px 30px;
+>>>>>>> Stashed changes
 }
 
 .item {
   display: grid;
+<<<<<<< Updated upstream
   grid-template-columns: 0.5fr 1fr 5fr;
+=======
+  grid-template-columns: 1fr 1fr;
+  margin: 20px 15px 15px 15px;
+  border-bottom: 2px solid #e6ccb4;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.item-amount-and-name {
+  display: flex;
+}
+
+.item-amount {
+  margin: 0px 15px 0px 13px;
+}
+
+.item-name {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.item-price {
+  text-align: end;
+  font-weight: bold;
+  margin-right: 40px;
+}
+
+.item-extras {
+  list-style: none;
+  margin: 5px 0px 15px 7px;
+}
+
+.item-extra {
+  color: #895a2e;
+}
+
+.input-container {
+  position: relative;
+  margin: 0px 20px 30px 20px;
+}
+
+.input {
+  width: 100%;
+  border: 2px solid #804e1f;
+  border-radius: 100px;
+  background-color: #ede1d5;
+  height: 50px;
+  font-size: 18px;
+  padding: 0px 37px 0px 37px;
+}
+
+.input-label {
+  position: absolute;
+  color: #804e1f;
+  background-color: #ede1d5;
+  padding: 5px;
+  top: -15px;
+  left: 35px;
+}
+
+.ccv {
+  width: 220px;
+}
+
+.total {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.total-table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table-cell {
+  padding: 10px 70px 10px 70px;
+}
+
+.table-cell:last-child {
+  text-align: end;
+}
+
+.table-row:last-child {
+  font-weight: bold;
+}
+
+.order-button {
+  height: 50px;
+  border-radius: 100px;
+  border: none;
+  background-color: #e6ccb4;
+  font-size: 18px;
+  margin: 20px 40px 0px 40px;
+>>>>>>> Stashed changes
 }
